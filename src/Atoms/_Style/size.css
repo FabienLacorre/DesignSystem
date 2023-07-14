@@ -1,0 +1,13 @@
+.size--width--full {
+  width: 100%;
+}
+.size--width--half {
+  width: 50%;
+}
+
+.size--height--full {
+  height: 100%;
+}
+.size--height--half {
+  height: 50%;
+}

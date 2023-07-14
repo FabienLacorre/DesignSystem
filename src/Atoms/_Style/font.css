@@ -1,0 +1,50 @@
+/* COLORS */
+.font--color--primary {
+  color: var(--color--blue-100);
+}
+.font--color--alert {
+  color: var(--color--orange-100);
+}
+.font--color--error {
+  color: var(--color--red-100);
+}
+.font--color--white {
+  color: var(--color--white-100);
+}
+
+/* FONT SIZE */
+.font--size--small {
+  font-size: 0.75rem;
+}
+.font--size--medium {
+  font-size: 1rem;
+}
+.font--size--large {
+  font-size: 1.25rem;
+}
+.font--size--xlarge {
+  font-size: 1.5rem;
+}
+.font--size--xxlarge {
+  font-size: 2rem;
+}
+.font--size--xxxlarge {
+  font-size: 3rem;
+}
+
+/* FONT WEIGHT */
+.font--weight--light {
+  font-weight: 300;
+}
+.font--weight--regular {
+  font-weight: 400;
+}
+.font--weight--medium {
+  font-weight: 500;
+}
+.font--weight--bold {
+  font-weight: 700;
+}
+.font--weight--xbold {
+  font-weight: 900;
+}
