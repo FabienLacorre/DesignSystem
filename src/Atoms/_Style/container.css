@@ -65,3 +65,49 @@
 .container--grid--gap-large {
   gap: 32px;
 }
+
+/* JUSTIFY */
+.container--justify-content--center {
+  justify-content: center;
+}
+.container--justify-content--start {
+  justify-content: start;
+}
+.container--justify-content--end {
+  justify-content: end;
+}
+.container--justify-content--space-between {
+  justify-content: space-between;
+}
+.container--justify-content--space-around {
+  justify-content: space-around;
+}
+.container--justify-content--flex-start {
+  justify-content: flex-start;
+}
+.container--justify-content--flex-end {
+  justify-content: flex-end;
+}
+
+/* ALIGN */
+.container--align-items--center {
+  align-items: center;
+}
+.container--align-items--start {
+  align-items: start;
+}
+.container--align-items--end {
+  align-items: end;
+}
+.container--align-items--flex-start {
+  align-items: flex-start;
+}
+.container--align-items--flex-end {
+  align-items: flex-end;
+}
+.container--align-items--stretch {
+  align-items: stretch;
+}
+.container--align-items--baseline {
+  align-items: baseline;
+}

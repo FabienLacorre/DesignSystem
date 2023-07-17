@@ -1,6 +1,13 @@
 import { clsx } from "clsx";
 import { BasicProps } from "../_Types/basicProps";
-import { Display, Padding, Margin, Color } from "../_Types/basicTypes";
+import {
+  Display,
+  Padding,
+  Margin,
+  Color,
+  JustifyContent,
+  AlignItems,
+} from "../_Types/basicTypes";
 
 interface BoxProps extends BasicProps {
   display?: Display;
@@ -8,6 +15,8 @@ interface BoxProps extends BasicProps {
   margin?: Margin;
   fullWidth?: boolean;
   boxColor?: Color;
+  justifyContent?: JustifyContent;
+  alignItems?: AlignItems;
 }
 
 export const Box = ({
@@ -19,12 +28,20 @@ export const Box = ({
   padding,
   fullWidth,
   boxColor,
+  justifyContent,
+  alignItems,
 }: BoxProps): JSX.Element => {
   const boxDisplay = display ? `container--display--${display}` : "";
   const boxMargin = margin ? `container--margin--${margin}` : "";
   const boxPadding = padding ? `container--padding--${padding}` : "";
   const fWidth = fullWidth ? "size--full--width" : "";
   const bColor = boxColor ? `container--color--${boxColor}` : "";
+  const boxJustifyContent = justifyContent
+    ? `container--justify-content--${justifyContent}`
+    : "";
+  const boxAlignItems = alignItems
+    ? `container--align-items--${alignItems}`
+    : "";
 
   return (
     <div
@@ -36,6 +53,7 @@ export const Box = ({
         boxPadding,
         fWidth,
         bColor,
+        boxJustifyContent,
       ])}
     >
       {children}
