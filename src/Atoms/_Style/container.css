@@ -88,20 +88,6 @@
   flex-direction: row;
 }
 
-/* COLORS */
-.container--color--primary {
-  background-color: var(--color--blue-100);
-}
-.container--color--alert {
-  background-color: var(--color--orange-100);
-}
-.container--color--error {
-  background-color: var(--color--red-100);
-}
-.container--color--white {
-  background-color: var(--color--white-100);
-}
-
 /* GRID */
 
 .container--grid--display {

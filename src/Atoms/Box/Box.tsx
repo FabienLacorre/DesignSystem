@@ -35,7 +35,7 @@ export const Box = ({
   const boxMargin = margin ? `container--margin--${margin}` : "";
   const boxPadding = padding ? `container--padding--${padding}` : "";
   const fWidth = fullWidth ? "size--width--full" : "";
-  const bColor = boxColor ? `container--color--${boxColor}` : "";
+  const bColor = boxColor ? `container--background-color--${boxColor}` : "";
   const boxJustifyContent = justifyContent
     ? `container--justify-content--${justifyContent}`
     : "";

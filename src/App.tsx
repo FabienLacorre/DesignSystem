@@ -10,9 +10,7 @@ import { arrowLeftIcon } from "./Atoms/Icon/_Icons/arrowLeftIcon";
 const Buttons = () => {
   return (
     <>
-      <Typography size="xxlarge" weight="bold">
-        Buttons
-      </Typography>
+      <Header title="Buttons" boxColor="primary" textColor="white" />
       <Box display="flex-row">
         <Button
           style={{ marginRight: 8 }}
@@ -58,9 +56,7 @@ const Buttons = () => {
 const Typographies = () => {
   return (
     <>
-      <Typography size="xxlarge" weight="bold">
-        Typographies
-      </Typography>
+      <Header title="Typographies" boxColor="primary" textColor="white" />
       <Typography size="xlarge" weight="bold">
         Size
       </Typography>
@@ -99,24 +95,51 @@ const Typographies = () => {
 const Inputs = () => {
   return (
     <>
-      <Typography size="xxlarge" weight="bold">
-        Inputs
-      </Typography>
-      <Typography size="xlarge" weight="bold">
-        W.I.P
-      </Typography>
+      <Header title="Inputs (WIP)" boxColor="primary" textColor="white" />
       <Box>
         <Input placeholder="this is a placeholder" />
       </Box>
     </>
   );
 };
+
+const Headers = () => {
+  return (
+    <>
+      <Header title="Headers" boxColor="primary" textColor="white" />
+      <Header title="color: primary" boxColor="primary" textColor="white" />
+      <Header title="color: success" boxColor="success" textColor="white" />
+      <Header title="color: alert" boxColor="alert" textColor="white" />
+      <Header title="color: error" boxColor="error" textColor="white" />
+
+      <Header
+        title="padding: small"
+        padding="small"
+        boxColor="primary"
+        textColor="white"
+      />
+      <Header
+        title="padding: medium"
+        padding="medium"
+        boxColor="primary"
+        textColor="white"
+      />
+      <Header
+        title="padding: large"
+        padding="large"
+        boxColor="primary"
+        textColor="white"
+      />
+    </>
+  );
+};
 function App() {
   return (
     <>
-      <Header title="This is a header" boxColor="primary" textColor="white" />
+      <Header title="Dashboard" boxColor="primary" textColor="white" />
       <Box padding="large">
         <Grid flow="row" gap="large">
+          <Headers></Headers>
           <Buttons />
           <Typographies />
           <Inputs />
