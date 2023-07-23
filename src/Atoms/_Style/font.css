@@ -12,6 +12,20 @@
   color: var(--color--white-100);
 }
 
+/* FILL */
+.font--fill--primary {
+  fill: var(--color--blue-100);
+}
+.font--fill--alert {
+  fill: var(--color--orange-100);
+}
+.font--fill--error {
+  fill: var(--color--red-100);
+}
+.font--fill--white {
+  fill: var(--color--white-100);
+}
+
 /* FONT SIZE */
 .font--size--small {
   font-size: 0.75rem;

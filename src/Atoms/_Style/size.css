@@ -11,3 +11,30 @@
 .size--height--half {
   height: 50%;
 }
+
+.size--height--small {
+  height: 8px;
+}
+.size--height--medium {
+  height: 16px;
+}
+.size--height--large {
+  height: 24px;
+}
+.size--height--xlarge {
+  height: 32px;
+}
+
+.size--width--small {
+  width: 8px;
+}
+.size--width--medium {
+  width: 16px;
+}
+.size--width--large {
+  width: 24px;
+}
+.size--width--xlarge {
+  width: 32px;
+}
+

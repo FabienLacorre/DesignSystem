@@ -1,29 +1,31 @@
 import clsx from "clsx";
 import { BasicProps } from "../_Types/basicProps";
+import { Color, Size } from "../_Types/basicTypes";
 
 interface IconProps extends BasicProps {
-  path: string;
-  height?: string;
-  width?: string;
+  svg: React.ReactNode;
+  size: Size;
+  color?: Color;
 }
 
 export const Icon = ({
-  path,
+  svg,
   style,
   className,
-  height,
-  width,
+  color,
+  size,
 }: IconProps): JSX.Element => {
-  const fullHeightIcon = "size--width--full";
-  const fullWidthIcon = "size--height--full";
+  const fillColor = color ? `font--fill--${color}` : "font--fill--white";
+  const sizeHeightIcon = `size--height--${size}`;
+  const sizeWidthIcon = `size--width--${size}`;
   return (
-    <img
-      style={style}
-      src={path}
-      height={height ? height : "auto"}
-      width={width ? width : "auto"}
-      className={clsx([className, fullHeightIcon, fullWidthIcon])}
-      alt=""
-    />
+    <svg
+      className={clsx([className, fillColor, sizeHeightIcon, sizeWidthIcon])}
+      style={{ ...style }}
+      viewBox="0 0 24 24"
+      fill="currentColor"
+    >
+      {svg}
+    </svg>
   );
 };

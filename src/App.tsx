@@ -5,13 +5,15 @@ import { Header } from "./Organisms/Header/Header";
 import { Grid } from "./Atoms/Grid/Grid";
 import { Icon } from "./Atoms/Icon/Icon";
 import { Button } from "./Molecules/Button/Button";
-import { ArrowLeftIcon } from "./Atoms/Icon/_Icons";
+import { arrowLeftIcon } from "./Atoms/Icon/_Icons/arrowLeftIcon";
 
 function App() {
   return (
     <>
       <Header title="This is a header" boxColor="primary" textColor="white" />
       <Box padding="large">
+        <Icon size="medium" svg={arrowLeftIcon} />
+
         <Grid flow="row" gap="large">
           <Box>
             <Typography size="large" weight="xbold" color="error">
@@ -20,7 +22,13 @@ function App() {
           </Box>
 
           <Box>
-            <Button icon={<Icon path={ArrowLeftIcon} />}>THIS IS A TEST</Button>
+            <Button icon={<Icon size="medium" svg={arrowLeftIcon} />}>
+              THIS IS A ICON BUTTON
+            </Button>
+          </Box>
+
+          <Box>
+            <Button>THIS IS A BUTTON</Button>
           </Box>
 
           <Box>
