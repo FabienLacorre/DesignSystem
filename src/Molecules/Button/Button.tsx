@@ -31,7 +31,13 @@ export const Button = ({
     <button
       onClick={onClick}
       style={style}
-      className={clsx([className, buttonPadding, typographyColor, buttonType])}
+      className={clsx([
+        className,
+        buttonPadding,
+        typographyColor,
+        buttonType,
+        "button--classic--global",
+      ])}
     >
       <Box display="flex-row" alignItems="center">
         {icon && (

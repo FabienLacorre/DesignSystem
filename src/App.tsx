@@ -19,15 +19,33 @@ function App() {
             </Typography>
           </Box>
 
-          <Box>
+          <Box display="flex-row">
             <Button
-              content="THIS IS A TEST WITH ICON"
+              style={{ marginRight: 8 }}
+              content="GO BACK"
               icon={<Icon size="medium" svg={arrowLeftIcon} />}
             />
+            <Button content="SUBMIT" />
           </Box>
 
-          <Box>
-            <Button content="This is a test" />
+          <Box display="flex-row">
+            <Button
+              style={{ marginRight: 8 }}
+              content="GO BACK"
+              color="alert"
+              icon={<Icon size="medium" svg={arrowLeftIcon} />}
+            />
+            <Button content="SUBMIT" color="alert" />
+          </Box>
+
+          <Box display="flex-row">
+            <Button
+              style={{ marginRight: 8 }}
+              content="GO BACK"
+              color="error"
+              icon={<Icon size="medium" svg={arrowLeftIcon} />}
+            />
+            <Button content="SUBMIT" color="error" />
           </Box>
 
           <Box>

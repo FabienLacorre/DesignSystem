@@ -1,10 +1,51 @@
-.button--classic--primary {
-  background-color: var(--color--blue-100);
-  color: var(--color--white-100);
+.button--classic--global {
   border-radius: 4px;
   border: none;
   cursor: pointer;
   white-space: nowrap;
   width: auto;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+/* PRIMARY */
+
+.button--classic--primary {
+  background-color: var(--color--blue-100);
+  color: var(--color--white-100);
+}
+
+.button--classic--primary:hover {
+  background-color: var(--color--blue-80);
+}
+
+.button--classic--primary:active {
+  background-color: var(--color--blue-60);
+}
+
+/* ALERT */
+.button--classic--alert {
+  background-color: var(--color--orange-100);
+  color: var(--color--white-100);
+}
+
+.button--classic--alert:hover {
+  background-color: var(--color--orange-80);
+}
+
+.button--classic--alert:active {
+  background-color: var(--color--orange-60);
+}
+
+/* ERROR */
+.button--classic--error {
+  background-color: var(--color--red-100);
+  color: var(--color--white-100);
+}
+
+.button--classic--error:hover {
+  background-color: var(--color--red-80);
+}
+
+.button--classic--error:active {
+  background-color: var(--color--red-60);
 }
