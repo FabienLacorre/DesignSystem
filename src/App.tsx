@@ -12,8 +12,6 @@ function App() {
     <>
       <Header title="This is a header" boxColor="primary" textColor="white" />
       <Box padding="large">
-        <Icon size="medium" svg={arrowLeftIcon} />
-
         <Grid flow="row" gap="large">
           <Box>
             <Typography size="large" weight="xbold" color="error">
@@ -22,13 +20,14 @@ function App() {
           </Box>
 
           <Box>
-            <Button icon={<Icon size="medium" svg={arrowLeftIcon} />}>
-              THIS IS A ICON BUTTON
-            </Button>
+            <Button
+              content="THIS IS A TEST WITH ICON"
+              icon={<Icon size="medium" svg={arrowLeftIcon} />}
+            />
           </Box>
 
           <Box>
-            <Button>THIS IS A BUTTON</Button>
+            <Button content="This is a test" />
           </Box>
 
           <Box>

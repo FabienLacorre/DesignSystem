@@ -13,9 +13,9 @@ export const Icon = ({
   style,
   className,
   color,
-  size,
+  size = "small",
 }: IconProps): JSX.Element => {
-  const fillColor = color ? `font--fill--${color}` : "font--fill--white";
+  const fillColor = `font--fill--${color}`;
   const sizeHeightIcon = `size--height--${size}`;
   const sizeWidthIcon = `size--width--${size}`;
   return (

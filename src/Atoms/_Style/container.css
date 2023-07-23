@@ -1,3 +1,17 @@
+/* BACKGROUND COLOR */
+.container--background-color--primary {
+  background-color: var(--color--blue-100);
+}
+.container--background-color--alert {
+  background-color: var(--color--orange-100);
+}
+.container--background-color--error {
+  background-color: var(--color--red-100);
+}
+.container--background-color--white {
+  background-color: var(--color--white-100);
+}
+
 /* PADDING */
 .container--padding--small {
   padding: 8px;
