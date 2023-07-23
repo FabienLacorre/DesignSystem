@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import { BasicProps } from "../_Types/basicProps";
 
 interface IconProps extends BasicProps {
@@ -13,13 +14,16 @@ export const Icon = ({
   height,
   width,
 }: IconProps): JSX.Element => {
+  const fullHeightIcon = "size--width--full";
+  const fullWidthIcon = "size--height--full";
   return (
     <img
       style={style}
       src={path}
-      height={height}
-      width={width}
-      className={className}
+      height={height ? height : "auto"}
+      width={width ? width : "auto"}
+      className={clsx([className, fullHeightIcon, fullWidthIcon])}
+      alt=""
     />
   );
 };

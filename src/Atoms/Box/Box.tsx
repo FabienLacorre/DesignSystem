@@ -34,7 +34,7 @@ export const Box = ({
   const boxDisplay = display ? `container--display--${display}` : "";
   const boxMargin = margin ? `container--margin--${margin}` : "";
   const boxPadding = padding ? `container--padding--${padding}` : "";
-  const fWidth = fullWidth ? "size--full--width" : "";
+  const fWidth = fullWidth ? "size--width--full" : "";
   const bColor = boxColor ? `container--color--${boxColor}` : "";
   const boxJustifyContent = justifyContent
     ? `container--justify-content--${justifyContent}`
@@ -54,6 +54,7 @@ export const Box = ({
         fWidth,
         bColor,
         boxJustifyContent,
+        boxAlignItems,
       ])}
     >
       {children}

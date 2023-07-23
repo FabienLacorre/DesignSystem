@@ -5,6 +5,7 @@ import { Header } from "./Organisms/Header/Header";
 import { Grid } from "./Atoms/Grid/Grid";
 import { Icon } from "./Atoms/Icon/Icon";
 import { Button } from "./Molecules/Button/Button";
+import { ArrowLeftIcon } from "./Atoms/Icon/_Icons";
 
 function App() {
   return (
@@ -13,16 +14,13 @@ function App() {
       <Box padding="large">
         <Grid flow="row" gap="large">
           <Box>
-            <Button
-              icon={
-                <Icon path="Icons/arrow-left.svg" height="30px" width="30px" />
-              }
-            >
-              THIS IS A TEST
-            </Button>
             <Typography size="large" weight="xbold" color="error">
               This is a Typography
             </Typography>
+          </Box>
+
+          <Box>
+            <Button icon={<Icon path={ArrowLeftIcon} />}>THIS IS A TEST</Button>
           </Box>
 
           <Box>
