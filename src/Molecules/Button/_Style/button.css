@@ -22,6 +22,21 @@
   background-color: var(--color--blue-60);
 }
 
+/* SUCCESS */
+
+.button--classic--success {
+  background-color: var(--color--green-100);
+  color: var(--color--white-100);
+}
+
+.button--classic--success:hover {
+  background-color: var(--color--green-80);
+}
+
+.button--classic--success:active {
+  background-color: var(--color--green-60);
+}
+
 /* ALERT */
 .button--classic--alert {
   background-color: var(--color--orange-100);

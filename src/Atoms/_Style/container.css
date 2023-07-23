@@ -2,6 +2,9 @@
 .container--background-color--primary {
   background-color: var(--color--blue-100);
 }
+.container--background-color--success {
+  background-color: var(--color--green-100);
+}
 .container--background-color--alert {
   background-color: var(--color--orange-100);
 }

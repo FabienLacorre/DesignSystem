@@ -1,4 +1,10 @@
-export type Color = "default" | "primary" | "alert" | "error" | "white";
+export type Color =
+  | "default"
+  | "primary"
+  | "success"
+  | "alert"
+  | "error"
+  | "white";
 export type Display = "flex-column" | "flex-row";
 export type Margin = "small" | "medium" | "large";
 export type Padding = "small" | "medium" | "large";

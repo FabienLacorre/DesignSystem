@@ -24,6 +24,16 @@ const Buttons = () => {
 
       <Box display="flex-row">
         <Button
+          color="success"
+          style={{ marginRight: 8 }}
+          content="GO BACK"
+          icon={<Icon size="medium" svg={arrowLeftIcon} />}
+        />
+        <Button content="SUBMIT" color="success" />
+      </Box>
+
+      <Box display="flex-row">
+        <Button
           style={{ marginRight: 8 }}
           content="GO BACK"
           color="alert"
@@ -71,6 +81,9 @@ const Typographies = () => {
         </Typography>
         <Typography size="large" color="primary">
           Primary: Lorem ipsum
+        </Typography>
+        <Typography size="large" color="success">
+          Success: Lorem ipsum
         </Typography>
         <Typography size="large" color="alert">
           Alert: Lorem ipsum

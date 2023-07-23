@@ -2,6 +2,9 @@
 .font--color--primary {
   color: var(--color--blue-100);
 }
+.font--color--success {
+  color: var(--color--green-100);
+}
 .font--color--alert {
   color: var(--color--orange-100);
 }
@@ -15,6 +18,9 @@
 /* FILL */
 .font--fill--primary {
   fill: var(--color--blue-100);
+}
+.font--fill--success {
+  fill: var(--color--green-100);
 }
 .font--fill--alert {
   fill: var(--color--orange-100);
