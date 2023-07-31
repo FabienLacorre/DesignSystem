@@ -2,7 +2,7 @@ import { BasicProps } from "../../Atoms/_Types/basicProps";
 import { Box } from "../../Atoms/Box/Box";
 import clsx from "clsx";
 import { Typography } from "../../Atoms/Typography/Typography";
-import { Color } from "../../Atoms/_Types/basicTypes";
+import { Color, Weight } from "../../Atoms/_Types/basicTypes";
 
 import "./_Style/button.css";
 
@@ -12,6 +12,7 @@ interface ButtonProps extends BasicProps {
   content?: string;
   color?: Color;
   textColor?: Color;
+  textWeight?: Weight
 }
 
 export const Button = ({
@@ -22,11 +23,13 @@ export const Button = ({
   onClick,
   color = "primary",
   textColor = "white",
+  textWeight = "bold",
 }: ButtonProps) => {
   const buttonPadding = "container--padding--small";
   const iconMarginRight = "container--margin-right--small";
   const buttonType = `button--classic--${color}`;
   const typographyColor = `font--color--${textColor}`;
+
   return (
     <button
       onClick={onClick}
@@ -49,7 +52,7 @@ export const Button = ({
           </Box>
         )}
 
-        <Typography color="white" weight="bold">
+        <Typography color={textColor} weight={textWeight}>
           {content}
         </Typography>
       </Box>

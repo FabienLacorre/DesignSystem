@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Typography } from "../../Atoms/Typography/Typography";
+import { Typography } from "../Atoms/Typography/Typography";
 
 const meta = {
-  title: "Example/Typography",
+  title: "Atoms/Typography",
   component: Typography,
   parameters: {
     layout: "centered",
@@ -12,12 +12,6 @@ const meta = {
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
-export const Default: Story = {
-  args: {
-    children: "This is a typography component",
-  },
-};
 
 export const WeightBold: Story = {
   args: {
