@@ -17,6 +17,8 @@ interface BoxProps extends BasicProps {
   boxColor?: Color;
   justifyContent?: JustifyContent;
   alignItems?: AlignItems;
+  height?: number;
+  width?: number;
 }
 
 export const Box = ({
@@ -30,6 +32,8 @@ export const Box = ({
   boxColor,
   justifyContent,
   alignItems,
+  height,
+  width,
 }: BoxProps): JSX.Element => {
   const boxDisplay = display ? `container--display--${display}` : "";
   const boxMargin = margin ? `container--margin--${margin}` : "";
@@ -45,7 +49,7 @@ export const Box = ({
 
   return (
     <div
-      style={style}
+      style={{ ...style, height: height, width: width }}
       className={clsx([
         className,
         boxDisplay,
