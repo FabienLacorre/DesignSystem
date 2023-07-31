@@ -10,7 +10,7 @@ export type Margin = "small" | "medium" | "large";
 export type Padding = "small" | "medium" | "large";
 export type GridGap = "small" | "medium" | "large";
 export type GridFlow = "row" | "column";
-export type Weight = "light" | "regular" | "medium" | "bold" | "xbold";
+export type Weight = "regular" | "bold";
 export type JustifyContent =
   | "space-between"
   | "space-around"

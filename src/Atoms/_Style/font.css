@@ -1,4 +1,11 @@
+/* TODO REMOVE THIS LATER  */
+
+body {
+  font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 /* COLORS */
+
 .font--color--primary {
   color: var(--color--blue-100);
 }
@@ -53,18 +60,10 @@
 }
 
 /* FONT WEIGHT */
-.font--weight--light {
-  font-weight: 300;
-}
+
 .font--weight--regular {
-  font-weight: 400;
-}
-.font--weight--medium {
-  font-weight: 500;
+  font-weight: regular;
 }
 .font--weight--bold {
   font-weight: 700;
-}
-.font--weight--xbold {
-  font-weight: 900;
 }

@@ -16,9 +16,9 @@ export const Typography = ({
   children,
   style,
   className,
-  color,
-  weight,
-  size,
+  color = "default",
+  weight = "regular",
+  size = "medium",
 }: TypographyProps): JSX.Element => {
   const typographyColor = color ? `font--color--${color}` : "";
   const typographyWeight = weight ? `font--weight--${weight}` : "";
