@@ -1,12 +1,20 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Typography } from "../Atoms/Typography/Typography";
 import { Button } from "../Molecules/Button/Button";
+import { Icon } from "../Atoms/Icon/Icon";
+import { arrowLeftIcon } from "../Atoms/Icon/_Icons/arrowLeftIcon";
 
 const meta = {
     title: "Molecules/Button",
     component: Button,
     parameters: {
-        layout: "centered",
+        // layout: "centered",
+        docs: {
+            description: {
+                component:
+                    "Button component with a text and an optional icon.",
+            },
+        },
     },
     tags: ["autodocs"],
 } satisfies Meta<typeof Button>;
@@ -42,4 +50,18 @@ export const ColorError: Story = {
     },
 };
 
+export const WithIcon: Story = {
+    parameters: {
+        doc: {
+            description: {
+                story: "tihs"
+            }
+        }
+    },
+    args: {
+        content: "GO BACK",
+        textWeight: "regular",
+        icon: <Icon size="medium" svg={arrowLeftIcon} />
+    },
+};
 

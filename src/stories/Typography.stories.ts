@@ -5,7 +5,13 @@ const meta = {
   title: "Atoms/Typography",
   component: Typography,
   parameters: {
-    layout: "centered",
+    // layout: "centered",
+    docs: {
+      description: {
+        component:
+          "Simple typography component with color, size and weight configuration",
+      },
+    },
   },
   tags: ["autodocs"],
 } satisfies Meta<typeof Typography>;

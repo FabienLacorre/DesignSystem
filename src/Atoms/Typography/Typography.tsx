@@ -12,6 +12,10 @@ interface TypographyProps extends BasicProps {
   size?: Size;
 }
 
+/**
+ * # The Button component
+ * Shows a button
+ */
 export const Typography = ({
   children,
   style,

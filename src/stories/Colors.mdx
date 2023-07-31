@@ -1,0 +1,62 @@
+{/* Colors.mdx */}
+
+import { Meta, ColorPalette, ColorItem } from "@storybook/blocks";
+
+<Meta title="Colors" />
+
+Use with --color--XX-XXX
+
+<ColorPalette>
+  <ColorItem title="greyscale" colors={{ "white-100": "#FFFFFF", "alabaster-100": "#F8F8F8", "concrete-100": "#F3F3F3" }} />
+  <ColorItem title="Primary" colors={{ "blue-100": "#3da1ea" }} />
+  <ColorItem title="Success" colors={{ "green-100": "#59c159" }} />
+  <ColorItem title="Alert" colors={{ "orange-100": "#faa546" }} />
+  <ColorItem title="Error" colors={{ "red-100": "#dd5050" }} />
+
+{" "}
+
+<ColorItem
+  title="Blue"
+  colors={{
+    "blue-20": "#d8ecfb",
+    "blue-40": "#b1d9f7",
+    "blue-60 (active)": "#8bc7f2",
+    "blue-80 (hover)": "#64b4ee",
+    "blue-100 (primary)": "#3da1ea",
+  }}
+/>
+
+<ColorItem
+  title="Green"
+  colors={{
+    "green-20": "#def3de",
+    "green-40": "#bde6bd",
+    "green-60 (active)": "#9bda9b",
+    "green-80 (hover)": "#7acd7a",
+    "green-100 (success)": "#59c159",
+  }}
+/>
+
+<ColorItem
+  title="Orange"
+  colors={{
+    "orange-20": "#feedda",
+    "orange-40": "#fddbb5",
+    "orange-60 (active)": "#fcc990",
+    "orange-80 (hover)": "#fbb76b",
+    "orange-100 (alert)": "#faa546",
+  }}
+/>
+
+<ColorItem
+  title="Red"
+  colors={{
+    "red-20": "#f8dcdc",
+    "red-40": "#f1b9b9",
+    "red-60 (active)": "#eb9696",
+    "red-80 (hover)": "#e47373",
+    "red-100 (error)": "#dd5050",
+  }}
+/>
+
+</ColorPalette>
