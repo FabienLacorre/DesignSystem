@@ -21,11 +21,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
+
 export const Default: Story = {
     args: {
+        gap: "large",
+        flow: "column",
     },
+    render: (args) => (
+        <Grid {...args}>
+            <Box boxColor="primary" fullWidth height={50}/>
+            <Box boxColor="primary" fullWidth height={50}/>
+            <Box boxColor="primary" fullWidth height={50}/>
+            <Box boxColor="primary" fullWidth height={50}/>
+            <Box boxColor="primary" fullWidth height={50}/>
+            <Box boxColor="primary" fullWidth height={50}/>
+            <Box boxColor="primary" fullWidth height={50}/>
+            <Box boxColor="primary" fullWidth height={50}/>
+        </Grid>
+    ),
 };
-
-
-
-

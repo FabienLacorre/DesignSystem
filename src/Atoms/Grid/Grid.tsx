@@ -3,16 +3,16 @@ import { BasicProps } from "../_Types/basicProps";
 import { GridGap, GridFlow } from "../_Types/basicTypes";
 
 interface GridProps extends BasicProps {
-  gap: GridGap;
-  flow: GridFlow;
+  gap?: GridGap;
+  flow?: GridFlow;
 }
 
 export const Grid = ({
   children,
   className,
   style,
-  flow,
-  gap,
+  flow = "column",
+  gap = "medium",
 }: GridProps): JSX.Element => {
   const boxFlow = flow ? `container--grid--flow-${flow}` : "";
   const boxGap = gap ? `container--grid--gap-${gap}` : "";
