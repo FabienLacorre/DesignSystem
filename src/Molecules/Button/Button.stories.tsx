@@ -52,6 +52,7 @@ export const ColorError: Story = {
 export const WithIcon: Story = {
     args: {
         content: "GO BACK",
+        textWeight: "regular",
         icon: <Icon size="medium" svg={arrowLeftIcon} />
     },
 };

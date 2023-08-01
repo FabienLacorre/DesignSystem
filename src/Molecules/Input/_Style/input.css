@@ -1,0 +1,18 @@
+.input--classic--global {
+  padding: 8px;
+  border-radius: 4px;
+  border: 2px solid var(--color--lightgrey-100);
+  transition: all 0.15s ease-in-out;
+}
+
+.input--classic--global::placeholder {
+  color: var(--color--lightgrey-100);
+}
+
+.input--classic--primary:hover {
+  border: 2px solid var(--color--blue-100);
+}
+
+.input--classic--primary:focus {
+  border: 2px solid var(--color--blue-80);
+}
