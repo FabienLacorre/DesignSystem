@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Typography } from "../Atoms/Typography/Typography";
-import { Button } from "../Molecules/Button/Button";
-import { Icon } from "../Atoms/Icon/Icon";
-import { arrowLeftIcon } from "../Atoms/Icon/_Icons/arrowLeftIcon";
+import { Button } from "./Button";
+import { Icon } from "../../Atoms/Icon/Icon";
+import { arrowLeftIcon } from "../../Atoms/Icon/_Icons/arrowLeftIcon";
 
 const meta = {
     title: "Molecules/Button",
@@ -51,16 +50,16 @@ export const ColorError: Story = {
 };
 
 export const WithIcon: Story = {
-    parameters: {
-        doc: {
-            description: {
-                story: "tihs"
-            }
-        }
-    },
     args: {
         content: "GO BACK",
-        textWeight: "regular",
+        icon: <Icon size="medium" svg={arrowLeftIcon} />
+    },
+};
+
+export const WithIconAndBoldText: Story = {
+    args: {
+        content: "GO BACK",
+        textWeight: "bold",
         icon: <Icon size="medium" svg={arrowLeftIcon} />
     },
 };

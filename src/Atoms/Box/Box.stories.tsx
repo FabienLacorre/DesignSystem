@@ -1,7 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Icon } from "../Atoms/Icon/Icon";
-import { arrowLeftIcon } from "../Atoms/Icon/_Icons/arrowLeftIcon";
-import { Box } from "../Atoms/Box/Box";
+import { Box } from "./Box";
 
 const meta = {
     title: "Atoms/Box",
