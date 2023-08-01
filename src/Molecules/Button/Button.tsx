@@ -44,10 +44,7 @@ export const Button = ({
     >
       <Box display="flex-row" alignItems="center">
         {icon && (
-          <Box
-            style={{ height: 16, width: 16, fill: "white" }}
-            className={clsx(iconMarginRight)}
-          >
+          <Box className={clsx(iconMarginRight)} display="flex-row">
             {icon}
           </Box>
         )}
