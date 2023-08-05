@@ -44,20 +44,22 @@ export const Colors: Story = {
 
 export const WithIcons: Story = {
     render: (args) => (
-        <Grid {...args}>
-            <Box>
-                <Button content="GO BACK" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
-            </Box>
-            <Box>
-                <Button content="GO BACK" color="success" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
-            </Box>
-            <Box>
-                <Button content="GO BACK" color="alert" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
-            </Box>
-            <Box>
-                <Button content="GO BACK" color="error" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
-            </Box>
-        </Grid>
+        <>
+            <Grid {...args}>
+                <Box>
+                    <Button content="GO BACK" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                </Box>
+                <Box>
+                    <Button content="GO BACK" color="success" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                </Box>
+                <Box>
+                    <Button content="GO BACK" color="alert" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                </Box>
+                <Box>
+                    <Button content="GO BACK" color="error" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                </Box>
+            </Grid>
+        </>
     ),
 }
 

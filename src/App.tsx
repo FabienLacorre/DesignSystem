@@ -2,6 +2,7 @@ import { Box } from "./Atoms/Box/Box";
 import { Header } from "./Organisms/Header/Header";
 import { Grid } from "./Atoms/Grid/Grid";
 import { Input } from "./Molecules/Input/Input";
+import { Button } from "./Molecules/Button/Button";
 
 
 function App() {
@@ -16,6 +17,20 @@ function App() {
             <Input placeholder="Success" color="success" />
             <Input placeholder="Alert" color="alert" />
             <Input placeholder="Error" color="error" />
+          </Box>
+        </Grid>
+        <Grid>
+          <Box>
+            <Button content="BUTTON" />
+          </Box>
+          <Box>
+            <Button content="BUTTON" color="success" />
+          </Box>
+          <Box>
+            <Button content="BUTTON" color="alert" />
+          </Box>
+          <Box>
+            <Button content="BUTTON" color="error" />
           </Box>
         </Grid>
       </Box>
