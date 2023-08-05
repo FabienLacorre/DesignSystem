@@ -1,6 +1,7 @@
 
 import type { Meta, StoryObj } from "@storybook/react";
 import { Input } from "./Input";
+import { Grid } from "../../Atoms/Grid/Grid";
 
 const meta = {
     title: "Molecules/Input",
@@ -18,37 +19,22 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-    args: {
-        placeholder: "Primary"
-    }
-}
-
-export const Success: Story = {
-    args: {
-        color: "success",
-        placeholder: "Success"
-    }
-}
-
-export const Alert: Story = {
-    args: {
-        color: "alert",
-        placeholder: "Alert"
-    }
-}
-
-export const Error: Story = {
-    args: {
-        color: "error",
-        placeholder: "Error"
-    }
+export const Colors: Story = {
+    render: (args) => (
+        <Grid {...args}>
+            <Input placeholder="Primary" />
+            <Input placeholder="Success" color="success" />
+            <Input placeholder="Alert" color="alert" />
+            <Input placeholder="Error" color="error" />
+        </Grid>
+    ),
 }
 
 export const Disabled: Story = {
     args: {
         disabled: true,
         placeholder: "Disabled"
-    }
-}
+    },
+};
+
 

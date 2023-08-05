@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
 import { Icon } from "../../Atoms/Icon/Icon";
 import { arrowLeftIcon } from "../../Atoms/Icon/_Icons/arrowLeftIcon";
+import { Grid } from "../../Atoms/Grid/Grid";
+import { Box } from "../../Atoms/Box/Box";
 
 const meta = {
     title: "Molecules/Button",
@@ -21,47 +23,41 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const WeightRegular: Story = {
-    args: {
-        content: "SUBMIT",
-        textWeight: "regular"
-    },
-};
+export const Colors: Story = {
+    render: (args) => (
+        <Grid {...args}>
+            <Box>
+                <Button content="BUTTON" />
+            </Box>
+            <Box>
+                <Button content="BUTTON" color="success" />
+            </Box>
+            <Box>
+                <Button content="BUTTON" color="alert" />
+            </Box>
+            <Box>
+                <Button content="BUTTON" color="error" />
+            </Box>
+        </Grid>
+    ),
+}
 
-export const ColorSuccess: Story = {
-    args: {
-        content: "SUBMIT",
-        color: "success",
-    },
-};
-
-export const ColorAlert: Story = {
-    args: {
-        content: "SUBMIT",
-        color: "alert",
-    },
-};
-
-export const ColorError: Story = {
-    args: {
-        content: "SUBMIT",
-        color: "error",
-    },
-};
-
-export const WithIcon: Story = {
-    args: {
-        content: "GO BACK",
-        textWeight: "regular",
-        icon: <Icon size="medium" svg={arrowLeftIcon} />
-    },
-};
-
-export const WithIconAndBoldText: Story = {
-    args: {
-        content: "GO BACK",
-        textWeight: "bold",
-        icon: <Icon size="medium" svg={arrowLeftIcon} />
-    },
-};
+export const WithIcons: Story = {
+    render: (args) => (
+        <Grid {...args}>
+            <Box>
+                <Button content="GO BACK" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
+            </Box>
+            <Box>
+                <Button content="GO BACK" color="success" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
+            </Box>
+            <Box>
+                <Button content="GO BACK" color="alert" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
+            </Box>
+            <Box>
+                <Button content="GO BACK" color="error" icon={<Icon size="medium" svg={arrowLeftIcon} />} />
+            </Box>
+        </Grid>
+    ),
+}
 
