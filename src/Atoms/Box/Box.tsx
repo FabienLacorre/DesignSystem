@@ -19,6 +19,7 @@ interface BoxProps extends BasicProps {
   alignItems?: AlignItems;
   height?: number;
   width?: number;
+  onClick?: () => void;
 }
 
 export const Box = ({
@@ -34,6 +35,7 @@ export const Box = ({
   alignItems,
   height,
   width,
+  onClick,
 }: BoxProps): JSX.Element => {
   const boxDisplay = display ? `container--display--${display}` : "";
   const boxMargin = margin ? `container--margin--${margin}` : "";
@@ -49,8 +51,10 @@ export const Box = ({
 
   return (
     <div
+      onClick={onClick}
       style={{ ...style, height: height, width: width }}
       className={clsx([
+        onClick !== undefined ? "general--cursor--pointer" : "",
         className,
         boxDisplay,
         boxMargin,

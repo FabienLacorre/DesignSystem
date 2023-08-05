@@ -13,8 +13,8 @@ interface TypographyProps extends BasicProps {
 }
 
 /**
- * # The Button component
- * Shows a button
+ * ## The Typography component
+ * Used to display text
  */
 export const Typography = ({
   children,
