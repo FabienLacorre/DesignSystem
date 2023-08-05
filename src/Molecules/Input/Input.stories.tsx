@@ -24,7 +24,7 @@ export const Colors: Story = {
         <Grid {...args}>
             <Input placeholder="Primary" />
             <Input placeholder="Success" color="success" />
-            <Input placeholder="Alert" color="alert" />
+            <Input placeholder="Warning" color="warning" />
             <Input placeholder="Error" color="error" />
         </Grid>
     ),

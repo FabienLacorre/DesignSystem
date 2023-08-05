@@ -59,21 +59,21 @@
 
 /* ALERT */
 
-.input--classic--alert {
+.input--classic--warning {
   border: 2px solid var(--color--orange-30);
   outline-color: var(--color--orange-30);
 }
 
-.input--classic--alert:hover {
+.input--classic--warning:hover {
   border: 2px solid var(--color--orange-100);
   outline-color: var(--color--orange-100);
 }
 
-.input--classic--alert:focus {
+.input--classic--warning:focus {
   outline-color: var(--color--orange-60);
 }
 
-.input--classic--alert::placeholder {
+.input--classic--warning::placeholder {
   color: var(--color--orange-30);
   outline-color: var(--color--orange-30);
 }

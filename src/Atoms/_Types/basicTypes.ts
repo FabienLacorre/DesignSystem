@@ -2,7 +2,7 @@ export type Color =
   | "default"
   | "primary"
   | "success"
-  | "alert"
+  | "warning"
   | "error"
   | "white";
 export type Display = "flex-column" | "flex-row";

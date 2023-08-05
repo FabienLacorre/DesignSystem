@@ -12,7 +12,7 @@ body {
 .font--color--success {
   color: var(--color--green-100);
 }
-.font--color--alert {
+.font--color--warning {
   color: var(--color--orange-100);
 }
 .font--color--error {
@@ -29,7 +29,7 @@ body {
 .font--fill--success {
   fill: var(--color--green-100);
 }
-.font--fill--alert {
+.font--fill--warning {
   fill: var(--color--orange-100);
 }
 .font--fill--error {

@@ -15,7 +15,7 @@ function App() {
             <Input placeholder="Primary" disabled />
             <Input placeholder="Primary" />
             <Input placeholder="Success" color="success" />
-            <Input placeholder="Alert" color="alert" />
+            <Input placeholder="Warning" color="warning" />
             <Input placeholder="Error" color="error" />
           </Box>
         </Grid>
@@ -27,7 +27,7 @@ function App() {
             <Button content="BUTTON" color="success" />
           </Box>
           <Box>
-            <Button content="BUTTON" color="alert" />
+            <Button content="BUTTON" color="warning" />
           </Box>
           <Box>
             <Button content="BUTTON" color="error" />

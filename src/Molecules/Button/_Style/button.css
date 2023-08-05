@@ -40,16 +40,16 @@
 }
 
 /* ALERT */
-.button--classic--alert {
+.button--classic--warning {
   background-color: var(--color--orange-100);
   color: var(--color--white-100);
 }
 
-.button--classic--alert:hover {
+.button--classic--warning:hover {
   background-color: var(--color--orange-80);
 }
 
-.button--classic--alert:active {
+.button--classic--warning:active {
   background-color: var(--color--orange-60);
 }
 

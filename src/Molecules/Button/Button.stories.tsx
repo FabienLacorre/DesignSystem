@@ -33,7 +33,7 @@ export const Colors: Story = {
                 <Button content="BUTTON" color="success" />
             </Box>
             <Box>
-                <Button content="BUTTON" color="alert" />
+                <Button content="BUTTON" color="warning" />
             </Box>
             <Box>
                 <Button content="BUTTON" color="error" />
@@ -53,7 +53,7 @@ export const WithIcons: Story = {
                     <Button content="GO BACK" color="success" icon={<Icon size="small" svg={arrowLeftIcon} />} />
                 </Box>
                 <Box>
-                    <Button content="GO BACK" color="alert" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                    <Button content="GO BACK" color="warning" icon={<Icon size="small" svg={arrowLeftIcon} />} />
                 </Box>
                 <Box>
                     <Button content="GO BACK" color="error" icon={<Icon size="small" svg={arrowLeftIcon} />} />

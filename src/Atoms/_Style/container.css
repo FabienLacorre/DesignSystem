@@ -6,7 +6,7 @@
 .container--background-color--success {
   background-color: var(--color--green-100);
 }
-.container--background-color--alert {
+.container--background-color--warning {
   background-color: var(--color--orange-100);
 }
 .container--background-color--error {
