@@ -18,10 +18,37 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {}
-
-export const WithPlaceholder: Story = {
+export const Default: Story = {
     args: {
-        placeholder: "Placeholder"
+        placeholder: "Primary"
     }
 }
+
+export const Success: Story = {
+    args: {
+        color: "success",
+        placeholder: "Success"
+    }
+}
+
+export const Alert: Story = {
+    args: {
+        color: "alert",
+        placeholder: "Alert"
+    }
+}
+
+export const Error: Story = {
+    args: {
+        color: "error",
+        placeholder: "Error"
+    }
+}
+
+export const Disabled: Story = {
+    args: {
+        disabled: true,
+        placeholder: "Disabled"
+    }
+}
+
