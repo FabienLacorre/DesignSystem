@@ -12,6 +12,10 @@ import {
 interface BoxProps extends BasicProps {
   display?: Display;
   padding?: Padding;
+  paddingTop?: Padding;
+  paddingBottom?: Padding;
+  paddingLeft?: Padding;
+  paddingRight?: Padding;
   margin?: Margin;
   fullWidth?: boolean;
   boxColor?: Color;
@@ -29,6 +33,10 @@ export const Box = ({
   display,
   margin,
   padding,
+  paddingTop,
+  paddingBottom,
+  paddingLeft,
+  paddingRight,
   fullWidth,
   boxColor,
   justifyContent,
@@ -37,17 +45,23 @@ export const Box = ({
   width,
   onClick,
 }: BoxProps): JSX.Element => {
+  // DISPLAY
   const boxDisplay = display ? `container--display--${display}` : "";
+  // WIDTH
+  const fWidth = fullWidth ? "size--width--full" : "";
+  // COLORS
+  const bColor = boxColor ? `container--background-color--${boxColor}` : "";
+  // JUSTIFY CONTENT
+  const boxJustifyContent = justifyContent ? `container--justify-content--${justifyContent}` : "";
+  // ALIGN ITEMS
+  const boxAlignItems = alignItems ? `container--align-items--${alignItems}` : "";
+  // PADDINGS
   const boxMargin = margin ? `container--margin--${margin}` : "";
   const boxPadding = padding ? `container--padding--${padding}` : "";
-  const fWidth = fullWidth ? "size--width--full" : "";
-  const bColor = boxColor ? `container--background-color--${boxColor}` : "";
-  const boxJustifyContent = justifyContent
-    ? `container--justify-content--${justifyContent}`
-    : "";
-  const boxAlignItems = alignItems
-    ? `container--align-items--${alignItems}`
-    : "";
+  const boxPaddingTop = paddingTop ? `container--padding-top--${paddingTop}` : "";
+  const boxPaddingBottom = paddingBottom ? `container--padding-bottom--${paddingBottom}` : "";
+  const boxPaddingLeft = paddingLeft ? `container--padding-left--${paddingLeft}` : "";
+  const boxPaddingRight = paddingRight ? `container--padding-right--${paddingRight}` : "";
 
   return (
     <div
@@ -59,6 +73,10 @@ export const Box = ({
         boxDisplay,
         boxMargin,
         boxPadding,
+        boxPaddingTop,
+        boxPaddingBottom,
+        boxPaddingLeft,
+        boxPaddingRight,
         fWidth,
         bColor,
         boxJustifyContent,

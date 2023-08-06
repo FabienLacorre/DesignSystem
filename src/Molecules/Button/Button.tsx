@@ -29,16 +29,15 @@ export const Button = ({
   textSize = "small",
   outlined = false,
 }: ButtonProps) => {
+  // PADDINGS
   const buttonPadding = "container--padding--small";
   const buttonPaddingRight = "container--padding-right--medium";
   const buttonPaddingLeft = "container--padding-left--medium";
   const iconMarginRight = "container--margin-right--small";
   const typographyColor = `font--color--${textColor}`;
-
+  // TYPES
   let buttonType = `button--classic--${color}`;
-  if (outlined) {
-    buttonType = `button--outlined--${color}`;
-  }
+  if (outlined) { buttonType = `button--outlined--${color}`; }
 
 
   return (

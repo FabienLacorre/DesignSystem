@@ -23,9 +23,18 @@ export const Default: Story = {
         title: "THIS IS A TITLE"
     },
     render: (args) => (
-        <Accordion {...args}>
-            This is a text in this accordion
-        </Accordion>
+        <>
+            <Accordion {...args}>
+                This is a text in this accordion
+                <br />
+                This is a text in this accordion
+                <br />
+                This is a text in this accordion
+                <br />
+                This is a text in this accordion
+                <br />
+            </Accordion>
+        </>
     ),
 }
 

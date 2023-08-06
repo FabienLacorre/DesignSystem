@@ -1,0 +1,13 @@
+.collapse--classic--content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: all 0.5s ease-out;
+}
+
+.collapse--classic--content-collapsed {
+  grid-template-rows: 1fr;
+}
+
+.collapse--classic--content-box-container {
+  overflow: hidden;
+}

@@ -48,6 +48,26 @@
   padding-right: 32px;
 }
 
+.container--padding-top--small {
+  padding-top: 8px;
+}
+.container--padding-top--medium {
+  padding-top: 16px;
+}
+.container--padding-top--large {
+  padding-top: 32px;
+}
+
+.container--padding-bottom--small {
+  padding-bottom: 8px;
+}
+.container--padding-bottom--medium {
+  padding-bottom: 16px;
+}
+.container--padding-bottom--large {
+  padding-bottom: 32px;
+}
+
 /* MARGIN */
 .container--margin-small {
   margin: 8px;
