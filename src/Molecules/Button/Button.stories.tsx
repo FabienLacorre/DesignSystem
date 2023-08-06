@@ -41,6 +41,27 @@ export const Colors: Story = {
     ),
 }
 
+export const Outlined: Story = {
+    render: (args) => (
+        <>
+            <Grid {...args}>
+                <Box>
+                    <Button content="BUTTON" outlined />
+                </Box>
+                <Box>
+                    <Button content="BUTTON" color="success" outlined />
+                </Box>
+                <Box>
+                    <Button content="BUTTON" color="warning" outlined />
+                </Box>
+                <Box>
+                    <Button content="BUTTON" color="error" outlined />
+                </Box>
+            </Grid>
+        </>
+    ),
+}
+
 export const WithIcons: Story = {
     render: (args) => (
         <>
@@ -56,6 +77,27 @@ export const WithIcons: Story = {
                 </Box>
                 <Box>
                     <Button content="GO BACK" color="error" Icon={IoMdArrowDropleft} />
+                </Box>
+            </Grid>
+        </>
+    ),
+}
+
+export const OutlinedWithIcons: Story = {
+    render: (args) => (
+        <>
+            <Grid {...args}>
+                <Box>
+                    <Button content="GO BACK" outlined Icon={IoMdArrowDropleft} />
+                </Box>
+                <Box>
+                    <Button content="GO BACK" color="success" outlined Icon={IoMdArrowDropleft} />
+                </Box>
+                <Box>
+                    <Button content="GO BACK" color="warning" outlined Icon={IoMdArrowDropleft} />
+                </Box>
+                <Box>
+                    <Button content="GO BACK" color="error" outlined Icon={IoMdArrowDropleft} />
                 </Box>
             </Grid>
         </>

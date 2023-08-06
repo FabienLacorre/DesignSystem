@@ -14,6 +14,7 @@ interface ButtonProps extends BasicProps {
   textColor?: Color;
   textWeight?: Weight
   textSize?: Size,
+  outlined?: boolean;
 }
 
 export const Button = ({
@@ -26,13 +27,19 @@ export const Button = ({
   textColor = "white",
   textWeight = "bold",
   textSize = "small",
+  outlined = false,
 }: ButtonProps) => {
   const buttonPadding = "container--padding--small";
   const buttonPaddingRight = "container--padding-right--medium";
   const buttonPaddingLeft = "container--padding-left--medium";
   const iconMarginRight = "container--margin-right--small";
-  const buttonType = `button--classic--${color}`;
   const typographyColor = `font--color--${textColor}`;
+
+  let buttonType = `button--classic--${color}`;
+  if (outlined) {
+    buttonType = `button--outlined--${color}`;
+  }
+
 
   return (
     <button
@@ -55,7 +62,7 @@ export const Button = ({
           </Box>
         )}
 
-        <Typography color={textColor} weight={textWeight} size={textSize}>
+        <Typography weight={textWeight} size={textSize}>
           {content}
         </Typography>
       </Box>

@@ -24,6 +24,24 @@
   background-color: var(--color--blue-60);
 }
 
+.button--outlined--primary {
+  background-color: transparent;
+  border: 1px solid var(--color--blue-100);
+  color: var(--color--blue-100);
+}
+
+.button--outlined--primary:hover {
+  background-color: transparent;
+  border: 1px solid var(--color--blue-80);
+  color: var(--color--blue-80);
+}
+
+.button--outlined--primary:active {
+  background-color: var(--color--blue-60);
+  border: 1px solid var(--color--blue-60);
+  color: var(--color--white-100);
+}
+
 /* SUCCESS */
 
 .button--classic--success {
@@ -39,7 +57,26 @@
   background-color: var(--color--green-60);
 }
 
+.button--outlined--success {
+  background-color: transparent;
+  border: 1px solid var(--color--green-100);
+  color: var(--color--green-100);
+}
+
+.button--outlined--success:hover {
+  background-color: transparent;
+  border: 1px solid var(--color--green-80);
+  color: var(--color--green-80);
+}
+
+.button--outlined--success:active {
+  background-color: var(--color--green-60);
+  border: 1px solid var(--color--green-60);
+  color: var(--color--white-100);
+}
+
 /* ALERT */
+
 .button--classic--warning {
   background-color: var(--color--orange-100);
   color: var(--color--white-100);
@@ -53,7 +90,26 @@
   background-color: var(--color--orange-60);
 }
 
+.button--outlined--warning {
+  background-color: transparent;
+  border: 1px solid var(--color--orange-100);
+  color: var(--color--orange-100);
+}
+
+.button--outlined--warning:hover {
+  background-color: transparent;
+  border: 1px solid var(--color--orange-80);
+  color: var(--color--orange-80);
+}
+
+.button--outlined--warning:active {
+  background-color: var(--color--orange-60);
+  border: 1px solid var(--color--orange-60);
+  color: var(--color--white-100);
+}
+
 /* ERROR */
+
 .button--classic--error {
   background-color: var(--color--red-100);
   color: var(--color--white-100);
@@ -65,4 +121,22 @@
 
 .button--classic--error:active {
   background-color: var(--color--red-60);
+}
+
+.button--outlined--error {
+  background-color: transparent;
+  border: 1px solid var(--color--red-100);
+  color: var(--color--red-100);
+}
+
+.button--outlined--error:hover {
+  background-color: transparent;
+  border: 1px solid var(--color--red-80);
+  color: var(--color--red-80);
+}
+
+.button--outlined--error:active {
+  background-color: var(--color--red-60);
+  border: 1px solid var(--color--red-60);
+  color: var(--color--white-100);
 }
