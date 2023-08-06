@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { Button } from "./Button";
-import { Icon } from "../../Atoms/Icon/Icon";
-import { arrowLeftIcon } from "../../Atoms/Icon/_Icons/arrowLeftIcon";
+import { IoMdArrowDropleft } from 'react-icons/io';
 import { Grid } from "../../Atoms/Grid/Grid";
 import { Box } from "../../Atoms/Box/Box";
 
@@ -47,16 +46,16 @@ export const WithIcons: Story = {
         <>
             <Grid {...args}>
                 <Box>
-                    <Button content="GO BACK" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                    <Button content="GO BACK" Icon={IoMdArrowDropleft} />
                 </Box>
                 <Box>
-                    <Button content="GO BACK" color="success" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                    <Button content="GO BACK" color="success" Icon={IoMdArrowDropleft} />
                 </Box>
                 <Box>
-                    <Button content="GO BACK" color="warning" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                    <Button content="GO BACK" color="warning" Icon={IoMdArrowDropleft} />
                 </Box>
                 <Box>
-                    <Button content="GO BACK" color="error" icon={<Icon size="small" svg={arrowLeftIcon} />} />
+                    <Button content="GO BACK" color="error" Icon={IoMdArrowDropleft} />
                 </Box>
             </Grid>
         </>

@@ -7,7 +7,7 @@ import { Color, Size, Weight } from "../../Atoms/_Types/basicTypes";
 import "./_Style/button.css";
 
 interface ButtonProps extends BasicProps {
-  icon?: JSX.Element;
+  Icon?: any;
   onClick?: () => void;
   content?: string;
   color?: Color;
@@ -20,7 +20,7 @@ export const Button = ({
   content,
   style,
   className,
-  icon,
+  Icon,
   onClick,
   color = "primary",
   textColor = "white",
@@ -49,9 +49,9 @@ export const Button = ({
       ])}
     >
       <Box display="flex-row" alignItems="center">
-        {icon && (
+        {Icon && (
           <Box className={clsx(iconMarginRight)} display="flex-row">
-            {icon}
+            <Icon />
           </Box>
         )}
 

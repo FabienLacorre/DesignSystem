@@ -1,6 +1,5 @@
 import { Accordion } from "./Organisms/Accordion/Accordion";
 
-
 function App() {
   return (
     <>
