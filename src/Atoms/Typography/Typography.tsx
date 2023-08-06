@@ -10,6 +10,7 @@ interface TypographyProps extends BasicProps {
   color?: Color;
   weight?: Weight;
   size?: Size;
+  userSelect?: boolean;
 }
 
 /**
@@ -23,10 +24,12 @@ export const Typography = ({
   color = "default",
   weight = "regular",
   size = "medium",
+  userSelect = true,
 }: TypographyProps): JSX.Element => {
   const typographyColor = color ? `font--color--${color}` : "";
   const typographyWeight = weight ? `font--weight--${weight}` : "";
   const typographySize = size ? `font--size--${size}` : "";
+  const typographyUserSelect = userSelect === false ? `font--selection-none` : `font--selection-auto`;
 
   return (
     <span
@@ -36,6 +39,7 @@ export const Typography = ({
         typographyColor,
         typographyWeight,
         typographySize,
+        typographyUserSelect
       ])}
     >
       {children}

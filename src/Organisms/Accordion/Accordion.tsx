@@ -48,7 +48,7 @@ export const Accordion = ({ color = "primary", title, children }: AccordionProps
                         iconRotationClass,
                         `accordion--classic--${color}-icon`
                     ])} />
-                <Typography weight="bold">{title}</Typography>
+                <Typography userSelect={false} weight="bold">{title}</Typography>
             </Box>
             {/* CONTENT */}
             <Collapse isOpen={isOpen}>

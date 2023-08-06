@@ -6,6 +6,13 @@ body {
   font-family: "Nunito Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.font--selection-none {
+  user-select: none;
+}
+.font--selection-auto {
+  user-select: auto;
+}
+
 /* COLORS */
 
 .font--color--primary {
