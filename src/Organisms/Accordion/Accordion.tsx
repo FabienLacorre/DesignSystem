@@ -8,27 +8,21 @@ import { Collapse } from "../../Molecules/Collapse/Collapse";
 import { IoMdArrowDropright } from "react-icons/io";
 import { Color } from "../../Atoms/_Types/basicTypes";
 
-interface AccordionProps extends BasicProps {
+export interface AccordionProps extends BasicProps {
     color?: Color,
     title: string;
+    isOpen?: boolean;
+    onClick?: () => void;
 }
 
-export const Accordion = ({ color = "primary", title, children }: AccordionProps) => {
+export const Accordion = ({ color = "primary", title, children, isOpen = false, onClick }: AccordionProps) => {
     // CLASSES
     const accordionColorDivider = `accordion--classic--${color}-divider`;
 
     // LOGICAL
-    const [isOpen, setIsOpen] = useState(false);
     const [iconRotationClass, setIconRotationClass] = useState("");
 
-    const handleClick = () => {
-        setIsOpen((openValue) => !openValue);
-    }
-
     useEffect(() => {
-        if (isOpen === undefined) {
-            return;
-        }
         setIconRotationClass(isOpen ? "rotateNinety" : "rotateNinetyToDefault")
     }, [isOpen])
 
@@ -41,7 +35,7 @@ export const Accordion = ({ color = "primary", title, children }: AccordionProps
                     `accordion--classic--${color}-title-container`,
                     accordionColorDivider,
                 ])}
-                onClick={handleClick}>
+                onClick={onClick}>
                 <IoMdArrowDropright
                     className={clsx([
                         "font--size--large",

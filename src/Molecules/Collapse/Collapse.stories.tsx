@@ -1,13 +1,6 @@
 
 import type { Meta, StoryObj } from "@storybook/react";
 import { Collapse } from "./Collapse";
-import { useState } from "react";
-import { Button } from "../Button/Button";
-import { useAddonState } from '@storybook/manager-api';
-
-const Template = () => {
-
-}
 
 const meta = {
     title: "Molecules/Collapse",

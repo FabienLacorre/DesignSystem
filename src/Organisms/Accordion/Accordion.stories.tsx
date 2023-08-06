@@ -1,7 +1,8 @@
 
-import type { Meta, StoryObj } from "@storybook/react";
-import { Accordion } from "./Accordion";
+import { type Meta, type StoryObj } from "@storybook/react";
+import { Accordion, } from "./Accordion";
 import { Box } from "../../Atoms/Box/Box";
+import { useState } from "react";
 
 const meta = {
     title: "Organisms/Accordion",
@@ -19,47 +20,59 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const Default: Story = {
-    args: {
-        title: "This is a title accordion"
-    },
-    render: (args) => (
+const TemplateDefault = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    return (
         <>
-            <Accordion {...args}>
-                This is a text in an accordion
+            <Accordion title="This is a title" isOpen={isOpen} onClick={() => {
+                setIsOpen(!isOpen)
+            }}>
+                This is a text in this accordion
             </Accordion>
         </>
-    ),
+    )
 }
+export const Default: Story = {
+    args: {
+        title: "This is a title accordion",
+        isOpen: false,
+    },
+    render: (args) => <TemplateDefault />
+}
+
+const TemplateWithColors = () => {
+    const [isOpenPrimary, setIsOpenPrimary] = useState(false)
+    const [isOpenSuccess, setIsOpenSuccess] = useState(false)
+    const [isOpenWarning, setIsOpenWarning] = useState(false)
+    const [isOpenError, setIsOpenError] = useState(false)
+
+    const onClickPrimary = () => { setIsOpenPrimary(!isOpenPrimary) }
+    const onClickSuccess = () => { setIsOpenSuccess(!isOpenSuccess) }
+    const onClickWarning = () => { setIsOpenWarning(!isOpenWarning) }
+    const onClickError = () => { setIsOpenError(!isOpenError) }
+
+    return (
+        <>
+            <Accordion onClick={onClickPrimary} color="primary" isOpen={isOpenPrimary} title="Primary">
+                Text in accordion
+            </Accordion>
+            <Accordion onClick={onClickSuccess} color="success" isOpen={isOpenSuccess} title="Success">
+                Text in accordion
+            </Accordion>
+            <Accordion onClick={onClickWarning} color="warning" isOpen={isOpenWarning} title="Warning">
+                Text in accordion
+            </Accordion>
+            <Accordion onClick={onClickError} color="error" isOpen={isOpenError} title="Error">
+                Text in accordion
+            </Accordion>
+        </>
+    )
+};
 
 export const Colors: Story = {
-    args: {
-        title: ""
-    },
+    args: { title: "" },
     render: (args) => (
-        <>
-            <Box paddingBottom="small">
-                <Accordion title="Primary">
-                    This is a text in an accordion
-                </Accordion>
-            </Box>
-            <Box paddingBottom="small">
-                <Accordion title="Success" color="success">
-                    This is a text in an accordion
-                </Accordion>
-            </Box>
-            <Box paddingBottom="small">
-                <Accordion title="Warning" color="warning">
-                    This is a text in an accordion
-                </Accordion>
-            </Box>
-            <Box paddingBottom="small">
-                <Accordion title="Error" color="error">
-                    This is a text in an accordion
-                </Accordion>
-            </Box>
-        </>
+        <TemplateWithColors />
     ),
 }
-
-
