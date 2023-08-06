@@ -28,32 +28,34 @@
   animation-fill-mode: forwards;
 }
 
-/* @keyframes collapseIn {
+/* ROTATION  */
+
+@keyframes rotateNinetyAnimation {
   0% {
-    transform: scaleY(0);
+    transform: rotate(0deg);
   }
   100% {
-    transform: scaleY(1);
+    transform: rotate(90deg);
   }
 }
 
-@keyframes collapseOut {
-  0% {
-    transform: scaleY(1);
-  }
-  100% {
-    transform: scaleY(0);
-  }
-}
-
-.collapseIn {
-  animation-name: collapseIn;
-  animation-duration: 0.5s;
+.rotateNinety {
+  animation-name: rotateNinetyAnimation;
+  animation-duration: 0.25s;
   animation-fill-mode: forwards;
 }
 
-.collapseOut {
-  animation-name: collapseOut;
-  animation-duration: 0.5s;
+@keyframes rotateNinetyToDefaultAnimation {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotateNinetyToDefault {
+  animation-name: rotateNinetyToDefaultAnimation;
+  animation-duration: 0.25s;
   animation-fill-mode: forwards;
-} */
+}

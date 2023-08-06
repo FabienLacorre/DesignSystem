@@ -5,6 +5,15 @@ function App() {
     <>
       <Accordion title="THIS IS A TITLE">
         This is a text in this accordion
+        <br />
+        This is a text in this accordion
+        <br />
+        This is a text in this accordion
+        <br />
+        This is a text in this accordion
+        <br />
+
+
       </Accordion>
     </>
   );
