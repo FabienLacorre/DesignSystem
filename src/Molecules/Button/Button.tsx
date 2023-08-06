@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { Typography } from "../../Atoms/Typography/Typography";
 import { Color, Size, Weight } from "../../Atoms/_Types/basicTypes";
 
-import "./_Style/button.css";
+import "./button.css";
 
 interface ButtonProps extends BasicProps {
   Icon?: any;

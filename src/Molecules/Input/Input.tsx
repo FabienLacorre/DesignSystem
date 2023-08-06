@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import "./_Style/input.css";
+import "./input.css";
 import { Color } from "../../Atoms/_Types/basicTypes";
 
 interface InputProps {
