@@ -5,9 +5,10 @@ import { Typography } from "../../Atoms/Typography/Typography";
 import { Color, Size, Weight } from "../../Atoms/_Types/basicTypes";
 
 import "./button.css";
+import { IconType } from "react-icons";
 
 interface ButtonProps extends BasicProps {
-  Icon?: any;
+  Icon?: IconType;
   onClick?: () => void;
   content?: string;
   color?: Color;
