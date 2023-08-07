@@ -13,11 +13,15 @@ export interface AccordionProps extends BasicProps {
     title: string;
     isOpen?: boolean;
     onClick?: () => void;
+    isBottomBorder?: boolean;
 }
 
-export const Accordion = ({ color = "primary", title, children, isOpen = false, onClick, className, style }: AccordionProps) => {
+export const Accordion = ({ color = "primary", title, children, isOpen = false, onClick, className, style, isBottomBorder = false }: AccordionProps) => {
     // CLASSES
     const accordionColorDivider = `accordion--classic--${color}-divider`;
+    const accordionIsBottomBorder = isBottomBorder === false ? `accordion--no-border--global` : "";
+
+    console.log("accordionIsBottomBorder", accordionIsBottomBorder)
 
     // LOGICAL
     const [iconRotationClass, setIconRotationClass] = useState("");
@@ -28,23 +32,28 @@ export const Accordion = ({ color = "primary", title, children, isOpen = false, 
 
     return (
         <Box className={className} style={style}>
+
             {/* HEADER */}
+
             <Box display="flex-row" alignItems="center" paddingBottom="small" paddingTop="small"
                 className={clsx([
                     "accordion--classic--title-container",
                     `accordion--classic--${color}-title-container`,
+                    accordionIsBottomBorder,
                     accordionColorDivider,
                 ])}
                 onClick={onClick}>
                 <IoMdArrowDropright
                     className={clsx([
                         "font--size--large",
+                        `accordion--classic--${color}-icon`,
                         iconRotationClass,
-                        `accordion--classic--${color}-icon`
                     ])} />
                 <Typography userSelect={false} weight="bold">{title}</Typography>
             </Box>
+
             {/* CONTENT */}
+
             <Collapse isOpen={isOpen}>
                 <Box paddingBottom="small" paddingTop="small">
                     {children}

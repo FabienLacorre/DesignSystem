@@ -75,3 +75,39 @@ export const Colors: Story = {
         <TemplateWithColors />
     ),
 }
+
+const TemplateWithColorsWithBorder = () => {
+    const [isOpenPrimary, setIsOpenPrimary] = useState(false)
+    const [isOpenSuccess, setIsOpenSuccess] = useState(false)
+    const [isOpenWarning, setIsOpenWarning] = useState(false)
+    const [isOpenError, setIsOpenError] = useState(false)
+
+    const onClickPrimary = () => { setIsOpenPrimary(!isOpenPrimary) }
+    const onClickSuccess = () => { setIsOpenSuccess(!isOpenSuccess) }
+    const onClickWarning = () => { setIsOpenWarning(!isOpenWarning) }
+    const onClickError = () => { setIsOpenError(!isOpenError) }
+
+    return (
+        <>
+            <Accordion isBottomBorder onClick={onClickPrimary} color="primary" isOpen={isOpenPrimary} title="Primary">
+                Text in accordion
+            </Accordion>
+            <Accordion isBottomBorder onClick={onClickSuccess} color="success" isOpen={isOpenSuccess} title="Success">
+                Text in accordion
+            </Accordion>
+            <Accordion isBottomBorder onClick={onClickWarning} color="warning" isOpen={isOpenWarning} title="Warning">
+                Text in accordion
+            </Accordion>
+            <Accordion isBottomBorder onClick={onClickError} color="error" isOpen={isOpenError} title="Error">
+                Text in accordion
+            </Accordion>
+        </>
+    )
+};
+
+export const ColorsWithBorder: Story = {
+    args: { title: "" },
+    render: (args) => (
+        <TemplateWithColorsWithBorder />
+    ),
+}

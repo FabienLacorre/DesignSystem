@@ -4,6 +4,10 @@
   transition: all 0.15s ease-in-out;
 }
 
+.accordion--no-border--global {
+  border-bottom: none !important;
+}
+
 /* PRIMARY */
 
 .accordion--classic--primary-title-container:hover {
