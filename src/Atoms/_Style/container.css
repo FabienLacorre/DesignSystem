@@ -69,13 +69,13 @@
 }
 
 /* MARGIN */
-.container--margin-small {
+.container--margin--small {
   margin: 8px;
 }
-.container--margin-medium {
+.container--margin--medium {
   margin: 16px;
 }
-.container--margin-large {
+.container--margin--large {
   margin: 32px;
 }
 

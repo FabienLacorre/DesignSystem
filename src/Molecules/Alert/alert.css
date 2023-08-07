@@ -1,0 +1,34 @@
+/* GLOBAL  */
+
+.alert--classic--global {
+  padding: 16px 24px;
+  border-radius: 4px;
+}
+
+/* PRIMARY  */
+
+.alert--classic--primary {
+  background-color: var(--color--blue-100);
+  color: var(--color--white-100);
+}
+
+/* SUCCESS */
+
+.alert--classic--success {
+  background-color: var(--color--green-100);
+  color: var(--color--white-100);
+}
+
+/* WARNING */
+
+.alert--classic--warning {
+  background-color: var(--color--orange-100);
+  color: var(--color--white-100);
+}
+
+/* ERROR */
+
+.alert--classic--error {
+  background-color: var(--color--red-100);
+  color: var(--color--white-100);
+}

@@ -7,9 +7,9 @@ interface CollapseProps extends BasicProps {
     isOpen: boolean;
 }
 
-export const Collapse = ({ isOpen, children }: CollapseProps) => {
+export const Collapse = ({ isOpen, children, className, style }: CollapseProps) => {
     return (
-        <Box className={clsx(["collapse--classic--content", isOpen ? "collapse--classic--content-collapsed" : ""])}>
+        <Box className={clsx([className, "collapse--classic--content", isOpen ? "collapse--classic--content-collapsed" : ""])} style={style}>
             <Box className="collapse--classic--content-box-container">
                 {children}
             </Box>

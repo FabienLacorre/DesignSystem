@@ -1,7 +1,6 @@
 
 import { type Meta, type StoryObj } from "@storybook/react";
 import { Accordion, } from "./Accordion";
-import { Box } from "../../Atoms/Box/Box";
 import { useState } from "react";
 
 const meta = {

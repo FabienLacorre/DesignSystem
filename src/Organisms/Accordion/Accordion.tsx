@@ -15,7 +15,7 @@ export interface AccordionProps extends BasicProps {
     onClick?: () => void;
 }
 
-export const Accordion = ({ color = "primary", title, children, isOpen = false, onClick }: AccordionProps) => {
+export const Accordion = ({ color = "primary", title, children, isOpen = false, onClick, className, style }: AccordionProps) => {
     // CLASSES
     const accordionColorDivider = `accordion--classic--${color}-divider`;
 
@@ -27,7 +27,7 @@ export const Accordion = ({ color = "primary", title, children, isOpen = false, 
     }, [isOpen])
 
     return (
-        <Box>
+        <Box className={className} style={style}>
             {/* HEADER */}
             <Box display="flex-row" alignItems="center" paddingBottom="small" paddingTop="small"
                 className={clsx([
