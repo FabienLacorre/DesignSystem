@@ -12,12 +12,25 @@
   color: var(--color--white-100);
 }
 
+.alert--outlined--primary {
+  background-color: transparent;
+  border: 1px solid var(--color--blue-100);
+  color: var(--color--blue-100);
+}
+
 /* SUCCESS */
 
 .alert--classic--success {
   background-color: var(--color--green-100);
   color: var(--color--white-100);
 }
+
+.alert--outlined--success {
+  background-color: transparent;
+  border: 1px solid var(--color--green-100);
+  color: var(--color--green-100);
+}
+
 
 /* WARNING */
 
@@ -26,9 +39,22 @@
   color: var(--color--white-100);
 }
 
+.alert--outlined--warning {
+  background-color: transparent;
+  border: 1px solid var(--color--orange-100);
+  color: var(--color--orange-100);
+}
+
+
 /* ERROR */
 
 .alert--classic--error {
   background-color: var(--color--red-100);
   color: var(--color--white-100);
+}
+
+.alert--outlined--error {
+  background-color: transparent;
+  border: 1px solid var(--color--red-100);
+  color: var(--color--red-100);
 }

@@ -44,3 +44,27 @@ export const Colors: Story = {
     ),
 }
 
+export const OutlinedColor: Story = {
+    args: {
+        content: "This is an alert",
+        outlined: true,
+    },
+    render: (args) => (
+        <>
+            <Box margin="small">
+                <Alert {...args} />
+            </Box>
+            <Box margin="small">
+                <Alert {...args} color="success" />
+            </Box>
+            <Box margin="small">
+                <Alert {...args} color="warning" />
+            </Box>
+            <Box margin="small">
+                <Alert {...args} color="error" />
+            </Box>
+
+        </>
+
+    ),
+}
