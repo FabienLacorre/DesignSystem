@@ -41,7 +41,10 @@ export const Accordion = ({
   }, [isOpen]);
 
   return (
-    <Box className={clsx([className, shadowedClass])} style={style}>
+    <Box
+      className={clsx([className, shadowedClass, "container--radius--small"])}
+      style={style}
+    >
       {/* HEADER */}
 
       <Box

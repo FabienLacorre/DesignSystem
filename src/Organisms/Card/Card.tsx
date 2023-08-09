@@ -2,7 +2,6 @@ import "./card.css";
 import { Box } from "../../Atoms/Box/Box";
 import { BasicProps } from "../../Atoms/_Types/basicProps";
 import clsx from "clsx";
-import { Size } from "../../Atoms/_Types/basicTypes";
 
 export const HeaderCard = ({ children }: BasicProps) => {
   return (

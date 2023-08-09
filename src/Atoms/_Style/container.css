@@ -16,6 +16,12 @@
   background-color: var(--color--white-100);
 }
 
+/* RADIUS */
+
+.container--radius--small {
+  border-radius: 4px;
+}
+
 /* PADDING */
 
 .container--padding--small {
