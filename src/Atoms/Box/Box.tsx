@@ -17,6 +17,10 @@ interface BoxProps extends BasicProps {
   paddingLeft?: Padding;
   paddingRight?: Padding;
   margin?: Margin;
+  marginBottom?: Margin;
+  marginTop?: Margin;
+  marginLeft?: Margin;
+  marginRight?: Margin;
   fullWidth?: boolean;
   boxColor?: Color;
   justifyContent?: JustifyContent;
@@ -37,6 +41,10 @@ export const Box = ({
   paddingBottom,
   paddingLeft,
   paddingRight,
+  marginBottom,
+  marginTop,
+  marginLeft,
+  marginRight,
   fullWidth,
   boxColor,
   justifyContent,
@@ -52,16 +60,40 @@ export const Box = ({
   // COLORS
   const bColor = boxColor ? `container--background-color--${boxColor}` : "";
   // JUSTIFY CONTENT
-  const boxJustifyContent = justifyContent ? `container--justify-content--${justifyContent}` : "";
+  const boxJustifyContent = justifyContent
+    ? `container--justify-content--${justifyContent}`
+    : "";
   // ALIGN ITEMS
-  const boxAlignItems = alignItems ? `container--align-items--${alignItems}` : "";
+  const boxAlignItems = alignItems
+    ? `container--align-items--${alignItems}`
+    : "";
   // PADDINGS
   const boxMargin = margin ? `container--margin--${margin}` : "";
   const boxPadding = padding ? `container--padding--${padding}` : "";
-  const boxPaddingTop = paddingTop ? `container--padding-top--${paddingTop}` : "";
-  const boxPaddingBottom = paddingBottom ? `container--padding-bottom--${paddingBottom}` : "";
-  const boxPaddingLeft = paddingLeft ? `container--padding-left--${paddingLeft}` : "";
-  const boxPaddingRight = paddingRight ? `container--padding-right--${paddingRight}` : "";
+  const boxPaddingTop = paddingTop
+    ? `container--padding-top--${paddingTop}`
+    : "";
+  const boxPaddingBottom = paddingBottom
+    ? `container--padding-bottom--${paddingBottom}`
+    : "";
+  const boxPaddingLeft = paddingLeft
+    ? `container--padding-left--${paddingLeft}`
+    : "";
+  const boxPaddingRight = paddingRight
+    ? `container--padding-right--${paddingRight}`
+    : "";
+
+  // MARGINS
+  const boxMarginBottom = marginBottom
+    ? `container--margin-bottom--${marginBottom}`
+    : "";
+  const boxMarginTop = marginTop ? `container--margin-top--${marginTop}` : "";
+  const boxMarginLeft = marginLeft
+    ? `container--margin-left--${marginLeft}`
+    : "";
+  const boxMarginRight = marginRight
+    ? `container--margin-top--${marginRight}`
+    : "";
 
   return (
     <div
@@ -77,6 +109,10 @@ export const Box = ({
         boxPaddingBottom,
         boxPaddingLeft,
         boxPaddingRight,
+        boxMarginBottom,
+        boxMarginTop,
+        boxMarginLeft,
+        boxMarginRight,
         fWidth,
         bColor,
         boxJustifyContent,
