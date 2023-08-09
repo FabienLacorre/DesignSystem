@@ -40,48 +40,6 @@ export const Colors: Story = {
   ),
 };
 
-export const Outlined: Story = {
-  render: (args) => (
-    <>
-      <Grid {...args}>
-        <Box>
-          <Button content="BUTTON" outlined />
-        </Box>
-        <Box>
-          <Button content="BUTTON" color="success" outlined />
-        </Box>
-        <Box>
-          <Button content="BUTTON" color="warning" outlined />
-        </Box>
-        <Box>
-          <Button content="BUTTON" color="error" outlined />
-        </Box>
-      </Grid>
-    </>
-  ),
-};
-
-export const Borderless: Story = {
-  render: (args) => (
-    <>
-      <Grid {...args}>
-        <Box>
-          <Button content="BUTTON" borderless />
-        </Box>
-        <Box>
-          <Button content="BUTTON" color="success" borderless />
-        </Box>
-        <Box>
-          <Button content="BUTTON" color="warning" borderless />
-        </Box>
-        <Box>
-          <Button content="BUTTON" color="error" borderless />
-        </Box>
-      </Grid>
-    </>
-  ),
-};
-
 export const WithIcons: Story = {
   render: (args) => (
     <>
@@ -97,6 +55,27 @@ export const WithIcons: Story = {
         </Box>
         <Box>
           <Button content="GO BACK" color="error" Icon={IoMdArrowDropleft} />
+        </Box>
+      </Grid>
+    </>
+  ),
+};
+
+export const Outlined: Story = {
+  render: (args) => (
+    <>
+      <Grid {...args}>
+        <Box>
+          <Button content="BUTTON" outlined />
+        </Box>
+        <Box>
+          <Button content="BUTTON" color="success" outlined />
+        </Box>
+        <Box>
+          <Button content="BUTTON" color="warning" outlined />
+        </Box>
+        <Box>
+          <Button content="BUTTON" color="error" outlined />
         </Box>
       </Grid>
     </>
@@ -131,6 +110,63 @@ export const OutlinedWithIcons: Story = {
             content="GO BACK"
             color="error"
             outlined
+            Icon={IoMdArrowDropleft}
+          />
+        </Box>
+      </Grid>
+    </>
+  ),
+};
+
+export const Borderless: Story = {
+  render: (args) => (
+    <>
+      <Grid {...args}>
+        <Box>
+          <Button content="BUTTON" borderless />
+        </Box>
+        <Box>
+          <Button content="BUTTON" color="success" borderless />
+        </Box>
+        <Box>
+          <Button content="BUTTON" color="warning" borderless />
+        </Box>
+        <Box>
+          <Button content="BUTTON" color="error" borderless />
+        </Box>
+      </Grid>
+    </>
+  ),
+};
+
+export const BorderlessWithIcons: Story = {
+  render: (args) => (
+    <>
+      <Grid {...args}>
+        <Box>
+          <Button content="GO BACK" borderless Icon={IoMdArrowDropleft} />
+        </Box>
+        <Box>
+          <Button
+            content="GO BACK"
+            color="success"
+            borderless
+            Icon={IoMdArrowDropleft}
+          />
+        </Box>
+        <Box>
+          <Button
+            content="GO BACK"
+            color="warning"
+            borderless
+            Icon={IoMdArrowDropleft}
+          />
+        </Box>
+        <Box>
+          <Button
+            content="GO BACK"
+            color="error"
+            borderless
             Icon={IoMdArrowDropleft}
           />
         </Box>
