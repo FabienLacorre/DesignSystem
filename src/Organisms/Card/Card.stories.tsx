@@ -41,7 +41,12 @@ export const Default: Story = {
         </Box>
 
         <FooterCard>
-          <Button content="Read more" outlined />
+          <Box marginRight="small">
+            <Button content="Read more" outlined />
+          </Box>
+          <Box>
+            <Button content="Delete" color="error" />
+          </Box>
         </FooterCard>
       </Card>
     </>

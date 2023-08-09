@@ -92,7 +92,7 @@ export const Box = ({
     ? `container--margin-left--${marginLeft}`
     : "";
   const boxMarginRight = marginRight
-    ? `container--margin-top--${marginRight}`
+    ? `container--margin-right--${marginRight}`
     : "";
 
   return (

@@ -15,15 +15,18 @@
 
 .button--classic--primary {
   background-color: var(--color--blue-100);
+  border: 1px var(--color--blue-100) solid;
   color: var(--color--white-100);
 }
 
 .button--classic--primary:hover {
   background-color: var(--color--blue-80);
+  border: 1px var(--color--blue-80) solid;
 }
 
 .button--classic--primary:active {
   background-color: var(--color--blue-60);
+  border: 1px var(--color--blue-60) solid;
 }
 
 .button--outlined--primary {
@@ -48,15 +51,18 @@
 
 .button--classic--success {
   background-color: var(--color--green-100);
+  border: 1px var(--color--green-100) solid;
   color: var(--color--white-100);
 }
 
 .button--classic--success:hover {
   background-color: var(--color--green-80);
+  border: 1px var(--color--green-80) solid;
 }
 
 .button--classic--success:active {
   background-color: var(--color--green-60);
+  border: 1px var(--color--green-60) solid;
 }
 
 .button--outlined--success {
@@ -81,15 +87,18 @@
 
 .button--classic--warning {
   background-color: var(--color--orange-100);
+  border: 1px var(--color--orange-100) solid;
   color: var(--color--white-100);
 }
 
 .button--classic--warning:hover {
   background-color: var(--color--orange-80);
+  border: 1px var(--color--orange-80) solid;
 }
 
 .button--classic--warning:active {
   background-color: var(--color--orange-60);
+  border: 1px var(--color--orange-60) solid;
 }
 
 .button--outlined--warning {
@@ -114,15 +123,18 @@
 
 .button--classic--error {
   background-color: var(--color--red-100);
+  border: 1px var(--color--red-100) solid;
   color: var(--color--white-100);
 }
 
 .button--classic--error:hover {
   background-color: var(--color--red-80);
+  border: 1px var(--color--red-80) solid;
 }
 
 .button--classic--error:active {
   background-color: var(--color--red-60);
+  border: 1px var(--color--red-60) solid;
 }
 
 .button--outlined--error {

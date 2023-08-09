@@ -5,11 +5,19 @@ import clsx from "clsx";
 import { Size } from "../../Atoms/_Types/basicTypes";
 
 export const HeaderCard = ({ children }: BasicProps) => {
-  return <Box marginBottom="small">{children}</Box>;
+  return (
+    <Box marginBottom="small" display="flex-row" alignItems="center">
+      {children}
+    </Box>
+  );
 };
 
 export const FooterCard = ({ children }: BasicProps) => {
-  return <Box marginTop="medium">{children}</Box>;
+  return (
+    <Box marginTop="medium" display="flex-row" alignItems="center">
+      {children}
+    </Box>
+  );
 };
 
 export const Card = ({ children }: BasicProps) => {
