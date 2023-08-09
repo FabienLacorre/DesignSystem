@@ -1,5 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { Card } from "./Card";
+import { Card, FooterCard, HeaderCard } from "./Card";
+import { Box } from "../../Atoms/Box/Box";
+import { Button } from "../../Molecules/Button/Button";
+import { Typography } from "../../Atoms/Typography/Typography";
 
 const meta = {
   title: "Organisms/Card",
@@ -21,14 +24,25 @@ export const Default: Story = {
   args: {},
   render: (args) => (
     <>
-      <Card title="Title of the card">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-        alias. Nam voluptates nobis consectetur veniam molestiae, rem aperiam
-        dolore porro repudiandae, animi modi iusto tenetur repellendus incidunt!
-        Aliquid, repudiandae nemo? Lorem ipsum dolor sit, amet consectetur
-        adipisicing elit. Adipisci vero ipsa nam dolorem est laborum incidunt
-        consequuntur consequatur doloremque possimus, natus dolor quisquam,
-        harum reprehenderit soluta! Dolores soluta optio quis.
+      <Card>
+        <HeaderCard>
+          <Typography weight="bold" size="medium" color="primary">
+            This is a title card
+          </Typography>
+        </HeaderCard>
+        <Box>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+          alias. Nam voluptates nobis consectetur veniam molestiae, rem aperiam
+          dolore porro repudiandae, animi modi iusto tenetur repellendus
+          incidunt! Aliquid, repudiandae nemo? Lorem ipsum dolor sit, amet
+          consectetur adipisicing elit. Adipisci vero ipsa nam dolorem est
+          laborum incidunt consequuntur consequatur doloremque possimus, natus
+          dolor quisquam, harum reprehenderit soluta! Dolores soluta optio quis.
+        </Box>
+
+        <FooterCard>
+          <Button content="Read more" outlined />
+        </FooterCard>
       </Card>
     </>
   ),
