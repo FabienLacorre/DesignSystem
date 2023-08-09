@@ -9,11 +9,33 @@
 .input--classic--global:disabled {
   border: 2px solid var(--color--lightgrey-100) !important;
   outline-color: var(--color--lightgrey-100) !important;
-  background-color:  var(--color--alabaster-100) !important;
+  background-color: var(--color--alabaster-100) !important;
 }
 
 .input--classic--global:disabled::placeholder {
   color: var(--color--lightgrey-100) !important;
+}
+
+/* DEFAULT */
+
+.input--classic--default {
+  border: 2px solid var(--color--black-30);
+  outline-color: var(--color--black-30);
+}
+
+.input--classic--default:hover {
+  border: 2px solid var(--color--black-100);
+  outline-color: var(--color--black-100);
+  background-color: var(--color--black-10);
+}
+
+.input--classic--default:focus {
+  outline-color: var(--color--black-60);
+}
+
+.input--classic--default::placeholder {
+  color: var(--color--black-30);
+  outline-color: var(--color--black-30);
 }
 
 /* PRIMARY */

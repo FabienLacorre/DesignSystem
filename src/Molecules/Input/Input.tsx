@@ -9,13 +9,22 @@ interface InputProps extends BasicProps {
   disabled?: boolean;
 }
 
-export const Input = ({ placeholder, color = "primary", disabled, className, style }: InputProps) => {
+export const Input = ({
+  placeholder,
+  color = "default",
+  disabled,
+  className,
+  style,
+}: InputProps) => {
   const inputType = `input--classic--${color}`;
 
-  return <input
-    style={style}
-    disabled={disabled}
-    className={clsx([className, "input--classic--global", inputType])}
-    type="text"
-    placeholder={placeholder} />
+  return (
+    <input
+      style={style}
+      disabled={disabled}
+      className={clsx([className, "input--classic--global", inputType])}
+      type="text"
+      placeholder={placeholder}
+    />
+  );
 };
