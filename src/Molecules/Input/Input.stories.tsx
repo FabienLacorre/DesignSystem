@@ -30,6 +30,30 @@ export const Colors: Story = {
   ),
 };
 
+export const Number: Story = {
+  render: (args) => (
+    <Grid {...args}>
+      <Input placeholder="Default" type="number" />
+      <Input placeholder="Primary" color="primary" type="number" />
+      <Input placeholder="Success" color="success" type="number" />
+      <Input placeholder="Warning" color="warning" type="number" />
+      <Input placeholder="Error" color="error" type="number" />
+    </Grid>
+  ),
+};
+
+export const Date: Story = {
+  render: (args) => (
+    <Grid {...args}>
+      <Input placeholder="Default" type="date" />
+      <Input placeholder="Primary" color="primary" type="date" />
+      <Input placeholder="Success" color="success" type="date" />
+      <Input placeholder="Warning" color="warning" type="date" />
+      <Input placeholder="Error" color="error" type="date" />
+    </Grid>
+  ),
+};
+
 export const Disabled: Story = {
   args: {
     disabled: true,
