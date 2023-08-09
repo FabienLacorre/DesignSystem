@@ -13,9 +13,10 @@ interface ButtonProps extends BasicProps {
   content?: string;
   color?: Color;
   textColor?: Color;
-  textWeight?: Weight
-  textSize?: Size,
+  textWeight?: Weight;
+  textSize?: Size;
   outlined?: boolean;
+  borderless?: boolean;
 }
 
 export const Button = ({
@@ -29,6 +30,7 @@ export const Button = ({
   textWeight = "bold",
   textSize = "small",
   outlined = false,
+  borderless = false,
 }: ButtonProps) => {
   // PADDINGS
   const buttonPadding = "container--padding--small";
@@ -38,8 +40,12 @@ export const Button = ({
   const typographyColor = `font--color--${textColor}`;
   // TYPES
   let buttonType = `button--classic--${color}`;
-  if (outlined) { buttonType = `button--outlined--${color}`; }
-
+  if (outlined) {
+    buttonType = `button--outlined--${color}`;
+  }
+  if (borderless) {
+    buttonType = `button--borderless--${color}`;
+  }
 
   return (
     <button
