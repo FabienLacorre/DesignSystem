@@ -1,6 +1,7 @@
 export type Color =
   | "default"
   | "primary"
+  | "secondary"
   | "success"
   | "warning"
   | "error"
@@ -40,3 +41,4 @@ export type Size =
   | "xlarge"
   | "xxlarge"
   | "xxxlarge";
+export type Overflow = "hidden" | "scroll";

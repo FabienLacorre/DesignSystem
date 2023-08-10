@@ -7,6 +7,7 @@ import {
   Color,
   JustifyContent,
   AlignItems,
+  Overflow,
 } from "../_Types/basicTypes";
 
 interface BoxProps extends BasicProps {
@@ -22,11 +23,14 @@ interface BoxProps extends BasicProps {
   marginLeft?: Margin;
   marginRight?: Margin;
   fullWidth?: boolean;
+  fullHeight?: boolean;
   boxColor?: Color;
   justifyContent?: JustifyContent;
   alignItems?: AlignItems;
   height?: number;
   width?: number;
+  overFlowX?: Overflow;
+  overFlowY?: Overflow;
   onClick?: () => void;
 }
 
@@ -46,17 +50,21 @@ export const Box = ({
   marginLeft,
   marginRight,
   fullWidth,
+  fullHeight,
   boxColor,
   justifyContent,
   alignItems,
   height,
   width,
   onClick,
+  overFlowX,
+  overFlowY,
 }: BoxProps): JSX.Element => {
   // DISPLAY
   const boxDisplay = display ? `container--display--${display}` : "";
   // WIDTH
   const fWidth = fullWidth ? "size--width--full" : "";
+  const fHeight = fullHeight ? "size--height--full" : "";
   // COLORS
   const bColor = boxColor ? `container--background-color--${boxColor}` : "";
   // JUSTIFY CONTENT
@@ -95,6 +103,9 @@ export const Box = ({
     ? `container--margin-right--${marginRight}`
     : "";
 
+  // OVERFLOW
+  const boxOverFlowX = `container--overflow-x--${overFlowX}`;
+  const boxOverFlowY = `container--overflow-y--${overFlowY}`;
   return (
     <div
       onClick={onClick}
@@ -114,9 +125,12 @@ export const Box = ({
         boxMarginLeft,
         boxMarginRight,
         fWidth,
+        fHeight,
         bColor,
         boxJustifyContent,
         boxAlignItems,
+        boxOverFlowY,
+        boxOverFlowX,
       ])}
     >
       {children}

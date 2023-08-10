@@ -12,7 +12,11 @@ export const Navbar = ({ className, style }: NavbarProps) => {
       boxColor="white"
       padding="medium"
       style={style}
-      className={clsx([className, "shadow--classic--black"])}
+      className={clsx([
+        className,
+        "shadow--classic--black",
+        "nav-bar--classic--global",
+      ])}
       display="flex-row"
       alignItems="center"
       justifyContent="space-between"

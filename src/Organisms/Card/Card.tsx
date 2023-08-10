@@ -19,9 +19,10 @@ export const FooterCard = ({ children }: BasicProps) => {
   );
 };
 
-export const Card = ({ children }: BasicProps) => {
+export const Card = ({ children, style }: BasicProps) => {
   return (
     <Box
+      style={style}
       padding="medium"
       className={clsx(["shadow--classic--black", "card--classic--global"])}
     >

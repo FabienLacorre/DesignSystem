@@ -3,6 +3,9 @@
 .container--background-color--primary {
   background-color: var(--color--blue-100);
 }
+.container--background-color--secondary {
+  background-color: var(--color--secondary-100);
+}
 .container--background-color--success {
   background-color: var(--color--green-100);
 }
@@ -213,4 +216,18 @@
 }
 .container--align-items--baseline {
   align-items: baseline;
+}
+
+/* OVERFLOW */
+.container--overflow-x--scroll {
+  overflow-x: scroll;
+}
+.container--overflow-x--hidden {
+  overflow-x: hidden;
+}
+.container--overflow-y--scroll {
+  overflow-y: scroll;
+}
+.container--overflow-y--hidden {
+  overflow-y: hidden;
 }
