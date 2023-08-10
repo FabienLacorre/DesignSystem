@@ -1,7 +1,7 @@
-import { NotFoundPage } from "./Pages/NotFoundPage/NotFoundPage";
+import { LoginPage } from "./Pages/LoginPage/LoginPage";
 
 function App() {
-  return <NotFoundPage />;
+  return <LoginPage />;
 }
 
 export default App;

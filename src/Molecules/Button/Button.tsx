@@ -17,6 +17,7 @@ interface ButtonProps extends BasicProps {
   textSize?: Size;
   outlined?: boolean;
   borderless?: boolean;
+  fullWidth?: boolean;
 }
 
 export const Button = ({
@@ -31,6 +32,7 @@ export const Button = ({
   textSize = "small",
   outlined = false,
   borderless = false,
+  fullWidth = false,
 }: ButtonProps) => {
   // PADDINGS
   const buttonPadding = "container--padding--small";
@@ -46,6 +48,8 @@ export const Button = ({
   if (borderless) {
     buttonType = `button--borderless--${color}`;
   }
+  // SIZE
+  const fWidth = fullWidth ? "size--width--full" : "";
 
   return (
     <button
@@ -58,6 +62,7 @@ export const Button = ({
         buttonPaddingLeft,
         typographyColor,
         buttonType,
+        fWidth,
         "button--classic--global",
       ])}
     >
