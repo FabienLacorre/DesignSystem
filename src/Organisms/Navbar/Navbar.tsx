@@ -2,7 +2,6 @@ import "./navbar.css";
 import clsx from "clsx";
 import { Box } from "../../Atoms/Box/Box";
 import { BasicProps } from "../../Atoms/_Types/basicProps";
-import { Typography } from "../../Atoms/Typography/Typography";
 import { Button } from "../../Molecules/Button/Button";
 
 interface NavbarProps extends BasicProps {}
@@ -10,6 +9,7 @@ interface NavbarProps extends BasicProps {}
 export const Navbar = ({ className, style }: NavbarProps) => {
   return (
     <Box
+      boxColor="white"
       padding="medium"
       style={style}
       className={clsx([className, "shadow--classic--black"])}

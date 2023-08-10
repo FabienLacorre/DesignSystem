@@ -1,0 +1,9 @@
+.layout--classic--global {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.layout--classic--content {
+  flex-grow: 1;
+}
